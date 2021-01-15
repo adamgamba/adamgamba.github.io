@@ -2,6 +2,36 @@ h1, h2 {
     text-align: center;
 }
 
+ul.row {
+    background-color: green;
+    text-align: center;
+    vertical-align: middle;
+}
+.nav-item {
+    border: 1px solid black;
+}
+
+
+#test {
+    background-color: lime;
+}
+#contact-section {
+    font-size: 1.5em;
+}
+body {
+    background-color: black;
+}
+
+
+
+section:nth-of-type(2n) {
+    background-color: gray;
+}
+section:nth-of-type(2n-1) {
+    background-color: yellow;
+}
+
+
 #java:hover {
     color: #f89820;
 }
