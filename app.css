@@ -1,3 +1,41 @@
-h1 {
+h1, h2 {
+    text-align: center;
+}
+
+#java:hover {
+    color: #f89820;
+}
+#python:hover {
+    color: #4b8bbe;
+}
+#r:hover {
+    color: #165caa;
+}
+#html:hover {
+    color: #e44d26;
+}
+#css:hover {
+    color: #66d3fa;
+}
+#javascript:hover {
+    color: #f0db4f;
+}
+#matlab:hover {
+    color: red;
+}
+
+#email:hover {
+    color: red;
+}
+#cell:hover {
+    color: lime;
+}
+#linkedin:hover {
+    color: #0077b5;
+}
+#github:hover {
     color: purple;
+}
+#facebook:hover {
+    color: #3b5998;
 }
