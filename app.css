@@ -1,5 +1,11 @@
-h1, h2 {
+h1, h2, h4 {
     text-align: center;
+}
+h2 {
+    padding: 10px 0px;
+}
+h4 {
+    margin-top: 20px;
 }
 
 nav ul.row {
@@ -10,18 +16,27 @@ nav ul.row {
 .nav-item {
     border: 1px solid black;
 }
-/* body {
-    margin-top: 150px;
-} */
 
 section {
-    /* margin: 50px; */
-    padding: 20px;
+    font-size: 18pt;
+    padding: 1% 20%;
 }
 ul, li {
     list-style-type: none;
     padding: 0px;
 }
+hr {
+    width: 300px;
+    margin: auto;
+}
+
+section:nth-of-type(2n) {
+    background-color: #95afba;
+}
+section:nth-of-type(2n-1) {
+    background-color: #d5e1a3;
+}
+
 
 
 #contact-section span {
@@ -43,24 +58,34 @@ body {
 }
 
 
-
-section:nth-of-type(2n) {
-    background-color: #95afba;
+.carousel {
+    margin: 20px 0px;
 }
-section:nth-of-type(2n-1) {
-    background-color: #d5e1a3;
-}
-
-
-.carousel-inner{
+.carousel-inner {
+    font-size: 12pt;
     margin: auto;
     max-width: 768px;
     max-height: 500;
+}
+.carousel-inner h5 {
+    font-size: 16pt;
+}
+.carousel-caption:hover {
+    background-color: rgba(128, 128, 128, 0.75);
+    transition: background-color 0.5s;
 }
 #programming-section img {
     opacity: 25%;
 }
 #programming-section img:hover {
+    opacity: 80%;
+    transition: opacity 0.5s;
+}
+
+#research-section img {
+    opacity: 25%;
+}
+#research-section img:hover {
     opacity: 80%;
     transition: opacity 0.5s;
 }
@@ -104,8 +129,10 @@ section:nth-of-type(2n-1) {
     color: red;
 }
 
-
-
+#interests-section {
+    font-size: 14pt;
+    padding: 10px;
+}
 #interests-section img {
     width: 100%;
     height: 100%;
@@ -115,3 +142,15 @@ section:nth-of-type(2n-1) {
     opacity: 25%;
     transition: opacity 0.5s;
 }
+/* #interests-section img {
+    width: 30%;
+    height: 20%;
+} */
+/* }
+@media (min-width: 100px) {
+    .interest {
+        display: flex;
+        max-width: 30%;
+        max-height: 30%;
+    }
+} */
