@@ -20,11 +20,13 @@ section {
     padding: 1% 20%;
 }
 section:nth-of-type(2n) {
-    background-color: #004a8f;
+    /* background-color: #004a8f; */
+background-image: linear-gradient(45deg, #004a8f, #0864bb);
     color: white;
 }
 section:nth-of-type(2n+1) {
     background-color: #d5e1a3;
+    background-image: linear-gradient(45deg, #d5e1a3, #ecf5ca);
     color: #004a8f;
 }
 ul, li {
@@ -75,7 +77,8 @@ nav {
 #contact-section button {
     width: 6em;
     height: 4em;
-    background-color: #004578;
+    /* background-color: #004578; */
+    background-image: linear-gradient(45deg, #004a8f, #0864bb);
     color: white;
     margin: 10px 0px;
 }
