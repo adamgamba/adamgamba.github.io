@@ -20,13 +20,11 @@ section {
     padding: 1% 20%;
 }
 section:nth-of-type(2n) {
-    /* background-color: #004a8f; */
-background-image: linear-gradient(45deg, #004a8f, #0864bb);
+    background-image: linear-gradient(45deg, #004a8f, #0e75d6);
     color: white;
 }
 section:nth-of-type(2n+1) {
-    background-color: #d5e1a3;
-    background-image: linear-gradient(45deg, #d5e1a3, #ecf5ca);
+    background-image: linear-gradient(45deg, #d5e1a3, #f7faed);
     color: #004a8f;
 }
 ul, li {
@@ -58,8 +56,27 @@ nav ul {
     text-align: center;
 }
 nav {
-    color: #004578;
     font-weight: bold;
+}
+
+
+/* Intro section */
+#intro-section {
+    padding: 1% 1%;
+}
+#intro-section img {
+    width: 309px;
+    height: 329px;
+    padding: 0;
+    margin: 0 auto;
+    border: 4px solid black;
+    border-radius: 4%;
+}
+#profile {
+    text-align: center;
+}
+#intro-section p {
+    text-indent: 50px;
 }
 
 
@@ -77,10 +94,10 @@ nav {
 #contact-section button {
     width: 6em;
     height: 4em;
-    /* background-color: #004578; */
-    background-image: linear-gradient(45deg, #004a8f, #0864bb);
+    background-image: linear-gradient(45deg, #004a8f, #0e75d6);
     color: white;
     margin: 10px 0px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
 }
 
 /* Education section */
@@ -103,16 +120,26 @@ nav {
     margin: 20px 0px;
 }
 .carousel-inner {
-    font-size: 12pt;
+    font-size: 10pt;
     margin: auto;
     max-width: 768px;
     max-height: 500;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+
 }
 .carousel-inner h5 {
-    font-size: 16pt;
+    font-size: 14pt;
+}
+@media (min-width: 900px) {
+    .carousel-inner {
+        font-size: 16pt;
+    }
+    .carousel-inner h5 {
+        font-size: 20pt;
+    }
 }
 .carousel-caption:hover {
-    background-color: rgba(128, 128, 128, 0.75);
+    background-color: #004a8fcd;
     transition: background-color 0.5s;
 }
 #programming-section img {
@@ -238,6 +265,7 @@ nav {
 .gallery-item {
     margin: 10px;
     text-decoration: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
 }
 .gallery-item img {
     width: 330px;
@@ -254,6 +282,7 @@ nav {
     text-align: center;
     color: #fff;
     opacity: 0;
+    padding: 0px 50px;
 }
 .text-wrapper:hover {
     transition: all 0.8s ease;
