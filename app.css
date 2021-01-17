@@ -1,25 +1,31 @@
+/* General formatting */
 h1, h2, h4 {
     text-align: center;
+}
+h1 {
+    font-size: 40pt;
+    font-weight: bold;
+    padding: 20px 0px;
 }
 h2 {
     padding: 10px 0px;
 }
 h4 {
+    font-size: 20pt;
     margin-top: 20px;
+    font-weight: bold;
 }
-
-nav ul.row {
-    background-color: green;
-    text-align: center;
-    vertical-align: middle;
-}
-.nav-item {
-    border: 1px solid black;
-}
-
 section {
     font-size: 18pt;
     padding: 1% 20%;
+}
+section:nth-of-type(2n) {
+    background-color: #004a8f;
+    color: white;
+}
+section:nth-of-type(2n+1) {
+    background-color: #d5e1a3;
+    color: #004a8f;
 }
 ul, li {
     list-style-type: none;
@@ -29,16 +35,33 @@ hr {
     width: 300px;
     margin: auto;
 }
-
-section:nth-of-type(2n) {
-    background-color: #95afba;
-}
-section:nth-of-type(2n-1) {
+body {
     background-color: #d5e1a3;
 }
 
+/* Makes navbar scroll land on correct position */
+@media (min-width: 0px) {
+    html {
+        scroll-padding-top: 336px;
+    }
+}
+@media (min-width: 768px) {
+    html {
+        scroll-padding-top: 56px;
+    }
+}
+
+/* Navbar */
+nav ul {
+    text-align: center;
+}
+nav {
+    color: #004578;
+    font-weight: bold;
+}
 
 
+/* Contact section */
 #contact-section span {
     display: flex;
     justify-content: center;
@@ -52,12 +75,27 @@ section:nth-of-type(2n-1) {
 #contact-section button {
     width: 6em;
     height: 4em;
-}
-body {
-    background-color: red;
+    background-color: #004578;
+    color: white;
+    margin: 10px 0px;
 }
 
+/* Education section */
+#education-section {
+    padding: 1% 10%;
+}
+#education-section a {
+    text-decoration: none;
+}
+#education-section a:hover {
+    text-decoration: underline;
+}
+#education-section p, h4 {
+    text-align: center;
+    padding: 10px 0px;
+}
 
+/* Projects section */
 .carousel {
     margin: 20px 0px;
 }
@@ -82,6 +120,7 @@ body {
     transition: opacity 0.5s;
 }
 
+/* Research section */
 #research-section img {
     opacity: 25%;
 }
@@ -90,7 +129,7 @@ body {
     transition: opacity 0.5s;
 }
 
-
+/* Icon coloring by hover */
 #email:hover {
     color: red;
 }
@@ -104,9 +143,11 @@ body {
     color: purple;
 }
 #facebook:hover {
-    color: #3b5998;
+    color: #4e75c9;
 }
-
+#resume:hover {
+    color: rgb(196, 191, 185);
+}
 #java:hover {
     color: #f89820;
 }
@@ -114,7 +155,7 @@ body {
     color: #4b8bbe;
 }
 #r:hover {
-    color: #165caa;
+    color: #1d6eca;
 }
 #html:hover {
     color: #e44d26;
@@ -128,29 +169,103 @@ body {
 #matlab:hover {
     color: red;
 }
+#boostrap:hover {
+    color: #563d7c;
+}
+#excel:hover {
+    color: #1d6f42;
+}
+#word:hover {
+    color: #4e75c9;
+}
+#powerpoint:hover {
+    color: #d04423;
+}
+#adobe:hover {
+    color: #00f2ff;
+}
+#latex:hover {
+    color: #fdb600;
+}
 
+/* Skills section */
+#skills-section .row {
+    text-align: center;
+}
+#skills-section h5 {
+    color: white;
+    font-size: 20pt;
+    padding: 10px 0px;
+}
+#skills-section ul {
+    padding: 20px;
+    line-height: 40px;
+}
+#skills-section hr {
+    width: 100px;
+    margin: auto;
+}
+
+/* Work experience section */
+#work-section {
+    padding: 1% 10%
+}
+#work-section div {
+    font-style: italic;
+    font-size: 14pt;
+}
+#work-section p {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 2%;
+    padding-right: 10%;
+    font-size: 16pt;
+}
+
+/* Interests section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* To allow 3 per row, and to fix centering issue */
+    width: 120%;
+    transform: translate(-8.5%, 0%)
+}
+.gallery-item {
+    margin: 10px;
+    text-decoration: none;
+}
+.gallery-item img {
+    width: 330px;
+    height: 265px;
+    position: absolute;
+}
+.text-wrapper {
+    position: relative;
+    width: 330px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+}
+.text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+.description {
+    font-size: 12pt;
+}
 #interests-section {
+    padding-bottom: 145px;
+}
+
+/* Footer section */
+footer {
     font-size: 14pt;
     padding: 10px;
 }
-#interests-section img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-#interests-section img:hover {
-    opacity: 25%;
-    transition: opacity 0.5s;
-}
-/* #interests-section img {
-    width: 30%;
-    height: 20%;
-} */
-/* }
-@media (min-width: 100px) {
-    .interest {
-        display: flex;
-        max-width: 30%;
-        max-height: 30%;
-    }
-} */
